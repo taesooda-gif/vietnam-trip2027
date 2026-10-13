@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">달랏의 소나무 언덕과 호수</title>
+  <desc id="desc">짙은 초록 소나무 숲과 산, 붉은 해가 비치는 호수를 여행수첩 색감으로 그린 일러스트</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5c760"/>
+      <stop offset="0.48" stop-color="#e8d9bd"/>
+      <stop offset="1" stop-color="#8bb0a5"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c9a91"/>
+      <stop offset="1" stop-color="#234943"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="faded">
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faded" mode="multiply"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+    <rect width="1200" height="800" fill="url(#sky)"/>
+    <circle cx="884" cy="214" r="76" fill="#f05a3d" opacity="0.92"/>
+    <path d="M0 434 210 282 364 391 520 248 691 395 876 264 1200 442V800H0Z" fill="#355b4e"/>
+    <path d="M0 493 260 357 402 455 604 335 769 462 970 341 1200 470V800H0Z" fill="#24483f"/>
+    <path d="M0 548C184 505 345 514 510 550c173 38 341 52 690-13v263H0Z" fill="url(#water)"/>
+    <path d="M0 612c243-43 431-28 605 17 196 51 355 43 595-7" fill="none" stroke="#e8d9bd" stroke-width="7" opacity="0.45"/>
+    <g fill="#17322d">
+      <path d="m101 508 43-116 43 116h-25l32 80h-100l32-80Z"/>
+      <path d="m236 493 52-139 52 139h-30l39 96H226l39-96Z"/>
+      <path d="m997 505 45-122 45 122h-26l34 84H989l34-84Z"/>
+      <path d="m1100 518 36-96 36 96h-21l28 70h-86l28-70Z"/>
+    </g>
+    <g fill="#f2eadc" opacity="0.82">
+      <path d="M640 594c59-15 126-11 192 6-64 23-129 27-192 8Z"/>
+      <path d="M697 643c45-9 91-6 140 6-47 16-93 19-140 7Z"/>
+    </g>
+  </g>
+</svg>

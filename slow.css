@@ -194,6 +194,26 @@ body.slow-site {
   background: #f9c45c;
 }
 
+.flight-card.confirmed-flight {
+  border-color: rgba(249, 196, 92, 0.72);
+  background: rgba(249, 196, 92, 0.12);
+}
+
+.flight-card.pending-flight > div small {
+  letter-spacing: 0.06em;
+  font-weight: 850;
+}
+
+.route-list .status-confirmed {
+  background: rgba(46, 120, 144, 0.16);
+  color: #205b6e;
+}
+
+.route-list .status-planning {
+  background: rgba(249, 196, 92, 0.28);
+  color: #6b4a0b;
+}
+
 .five-legs {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -230,6 +250,48 @@ body.slow-site {
 
 .hotel-card.anchor-hotel {
   border-color: rgba(240, 90, 61, 0.38);
+}
+
+.hotel-grid.planning-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.planning-grid .hotel-card {
+  min-height: 410px;
+}
+
+.status-card-confirmed {
+  border-color: rgba(46, 120, 144, 0.42);
+}
+
+.status-card-pending {
+  border-color: rgba(249, 196, 92, 0.7);
+  background: linear-gradient(145deg, rgba(255, 249, 238, 0.92), rgba(249, 196, 92, 0.12));
+}
+
+.status-tab {
+  position: absolute;
+  right: -3px;
+  bottom: 12px;
+  border: 1px solid currentColor;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+  padding: 4px 8px;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.status-tab.confirmed {
+  color: var(--sky);
+}
+
+.status-tab.pending {
+  color: #8f5f0b;
+}
+
+.status-tab.group {
+  color: var(--coral);
 }
 
 .hotel-card .hotel-price strong.live-price {
@@ -484,6 +546,7 @@ body.slow-site {
 
   .departure-grid,
   .five-legs,
+  .hotel-grid.planning-grid,
   .project-grid,
   .project-roles {
     grid-template-columns: 1fr;
