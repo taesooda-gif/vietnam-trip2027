@@ -19,8 +19,8 @@
   <main>
     <div class="version-bar no-print">
       <span class="version-tag">TRIP UPDATE</span>
-      <span><strong>항공 3편 확정 · 숙소 17박 확보</strong>한 수첩입니다.</span>
-      <a href="#route">최신 일정 보기 ↓</a>
+      <span><strong>항공 3편 확정 · 숙소 17박 확보 · To-do 18개</strong>인 수첩입니다.</span>
+      <a href="#todo">할 일부터 보기 ↓</a>
     </div>
 
     <div class="tet-ribbon">
@@ -39,6 +39,7 @@
           </span>
         </a>
         <div class="nav-links">
+          <a href="#todo">할 일</a>
           <a href="#route">루트</a>
           <a href="#days">일정</a>
           <a href="#stays">숙소</a>
@@ -88,6 +89,57 @@
           <figcaption><span>02</span> DA LAT · 3 NIGHTS</figcaption>
         </figure>
         <div class="passport-stamp" aria-hidden="true">22N<br />23D</div>
+      </div>
+    </section>
+
+    <section id="todo" class="todo-section">
+      <div class="section-shell">
+        <div class="todo-heading">
+          <div>
+            <p class="eyebrow">00 · Before Everything</p>
+            <h2>지금 남은 일부터<br />하나씩 체크</h2>
+          </div>
+          <div class="todo-intro">
+            <p>예약이 끝난 항공과 부자 숙소는 빼고, 아직 해야 할 일만 모았습니다. 체크한 내용은 이 브라우저에 자동 저장됩니다.</p>
+            <div class="todo-progress" aria-live="polite">
+              <span>진행 상황</span>
+              <strong data-todo-count>0 / 18 완료</strong>
+              <button type="button" class="no-print" data-todo-reset>체크 초기화</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="todo-groups">
+          <article class="todo-group urgent">
+            <div class="todo-group-head"><span>01</span><div><small>BOOK FIRST</small><h3>숙소와 이동 예약</h3></div></div>
+            <label class="todo-item"><input type="checkbox" data-todo="group-city-hotel" /><span class="todo-check" aria-hidden="true"></span><div><strong>1/30—2/2 나트랑 시내호텔 예약</strong><small>객실 2개 · 커넥팅룸 우선, 불가하면 같은 층 옆방 · 심야 체크인 고지</small></div><em>최우선</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="wyndham-garden" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/2—2/4 윈덤가든 예약</strong><small>성인 3명·아이 4명 큰 객실 1개 · 침대 구성과 조식 포함 인원 확인</small></div><em>최우선</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="cxr-pickup" /><span class="todo-check" aria-hidden="true"></span><div><strong>1/30 깜라인공항 픽업 예약</strong><small>23:55 도착 · 7명과 캐리어가 모두 들어가는 차량 · 기사 미팅 위치 확인</small></div><em>예약</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="late-checkout" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/4 레이트 체크아웃 요청</strong><small>윈덤가든에 가능 시간과 추가요금 문의 · 불가하면 귀국 가족 짐 보관 요청</small></div><em>요청</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="nhatrang-dalat-car" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/13 나트랑→달랏 차량 예약</strong><small>시에스타 호텔→TTR Central Apart · 아빠와 아들, 캐리어 적재 가능 차량</small></div><em>예약</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="dalat-airport" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/16 달랏호텔→DLI 공항 이동</strong><small>VN1383 11:35 출발 기준으로 호텔 픽업 시각과 차량 예약</small></div><em>추가</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="saigon-airport" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/21 호텔→SGN 공항 이동</strong><small>KE472 14:05 출발 · 교통 정체를 고려한 체크아웃과 출발 시각 확정</small></div><em>추가</em></label>
+          </article>
+
+          <article class="todo-group">
+            <div class="todo-group-head"><span>02</span><div><small>BEFORE DEPARTURE</small><h3>통신·보험·서류</h3></div></div>
+            <label class="todo-item"><input type="checkbox" data-todo="roaming" /><span class="todo-check" aria-hidden="true"></span><div><strong>로밍 또는 eSIM 결정</strong><small>23일 사용량·핫스팟·현지 전화번호 필요 여부 비교 후 출국 전 개통</small></div><em>통신</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="insurance" /><span class="todo-check" aria-hidden="true"></span><div><strong>아빠·아들 여행자보험 가입</strong><small>1/30 출국부터 2/21 귀국까지 · 질병·상해·휴대품·항공 지연 보장 확인</small></div><em>보험</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="exchange" /><span class="todo-check" aria-hidden="true"></span><div><strong>환전과 해외결제 수단 준비</strong><small>도착 직후 쓸 소액 동 + 해외결제 카드 · 카드사 해외사용 설정과 수수료 확인</small></div><em>결제</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="passport-docs" /><span class="todo-check" aria-hidden="true"></span><div><strong>여권·예약 자료 이중 보관</strong><small>여권 유효기간 확인 · 항공·호텔·보험 서류를 휴대폰 오프라인과 종이로 준비</small></div><em>서류</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="flight-check" /><span class="todo-check" aria-hidden="true"></span><div><strong>세 항공편 최종 확인</strong><small>터미널·위탁수하물·좌석·온라인 체크인 가능 시각과 운항 알림 확인</small></div><em>항공</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="minor-docs" /><span class="todo-check" aria-hidden="true"></span><div><strong>미성년자 동반 서류 확인</strong><small>영문 가족관계증명서 등 아빠와 아들 여행에 필요한 서류가 있는지 항공사에 확인</small></div><em>확인</em></label>
+          </article>
+
+          <article class="todo-group">
+            <div class="todo-group-head"><span>03</span><div><small>PHONE &amp; LOCAL LIFE</small><h3>앱과 현지 준비</h3></div></div>
+            <label class="todo-item"><input type="checkbox" data-todo="baedalk" /><span class="todo-check" aria-hidden="true"></span><div><strong>배달K 앱 설치</strong><small>가입·로그인 후 나트랑과 호치민 호텔 주소를 저장하고 결제 방법 확인</small></div><em>앱</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="gln" /><span class="todo-check" aria-hidden="true"></span><div><strong>퍼플GLN 결제 앱 준비</strong><small>설치·가입·충전 수단 연결 · 베트남 QR 결제와 BIDV ATM 이용 조건 확인</small></div><em>결제</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="grab" /><span class="todo-check" aria-hidden="true"></span><div><strong>Grab 설치와 결제 등록</strong><small>한국에서 본인인증과 카드 등록 · 공항·호텔 주소를 즐겨찾기에 저장</small></div><em>교통</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="offline-tools" /><span class="todo-check" aria-hidden="true"></span><div><strong>오프라인 지도·번역 준비</strong><small>나트랑·달랏·호치민 지도와 베트남어 번역 데이터를 휴대폰에 다운로드</small></div><em>휴대폰</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="tet-hours" /><span class="todo-check" aria-hidden="true"></span><div><strong>뗏 특별영업 최종 확인</strong><small>출발 1—2주 전 호텔·식당·관광지·차량 업체의 2/4—2/13 영업 여부 확인</small></div><em>재확인</em></label>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -492,10 +544,11 @@
       <details>
         <summary>자료 기준과 주요 출처 보기</summary>
         <div>
-          <p>항공편, 동행 구성과 숙소 예약 상태는 2026년 10월 14일 기준 여행자의 예약·계획을 반영했습니다. 그룹 숙소·차량·세부 관광 일정·특별영업은 아직 바뀔 수 있습니다.</p>
+          <p>항공편, 동행 구성과 숙소 예약 상태는 2026년 10월 20일 기준 여행자의 예약·계획을 반영했습니다. 그룹 숙소·차량·세부 관광 일정·특별영업은 아직 바뀔 수 있습니다.</p>
           <ul>
             <li><a href="https://www.vietnam.travel/things-to-do/tet-vietnam-lunar-new-year" target="_blank" rel="noopener noreferrer">베트남 관광청 Tết 안내 ↗</a></li>
             <li><a href="https://www.mofa.go.kr/vn-ko/brd/m_2203/view.do?seq=1345931" target="_blank" rel="noopener noreferrer">주베트남 대한민국 대사관 무사증 안내 ↗</a></li>
+            <li><a href="https://www.glninternational.com/how-to-use/vietnam" target="_blank" rel="noopener noreferrer">퍼플GLN 베트남 이용 안내 ↗</a></li>
           </ul>
           <p class="photo-credit">나트랑·호치민 사진은 기존 다낭 포함 수첩의 라이선스 표기를 따르며, 달랏 이미지는 이 수첩을 위해 제작한 벡터 일러스트입니다.</p>
         </div>

@@ -213,10 +213,63 @@ function renderGuide(city = '나트랑') {
     </article>`).join('');
 }
 
+const TODO_STORAGE_KEY = 'vietnam-trip-2027-todos-v1';
+
+function setupTodoList() {
+  const checkboxes = [...document.querySelectorAll('[data-todo]')];
+  const counter = document.querySelector('[data-todo-count]');
+  const resetButton = document.querySelector('[data-todo-reset]');
+
+  if (!checkboxes.length || !counter) return;
+
+  let savedState = {};
+  try {
+    savedState = JSON.parse(window.localStorage.getItem(TODO_STORAGE_KEY) || '{}');
+  } catch (error) {
+    savedState = {};
+  }
+
+  const update = (shouldSave = true) => {
+    const state = {};
+    let completed = 0;
+
+    checkboxes.forEach((checkbox) => {
+      state[checkbox.dataset.todo] = checkbox.checked;
+      completed += checkbox.checked ? 1 : 0;
+      checkbox.closest('.todo-item')?.classList.toggle('is-complete', checkbox.checked);
+    });
+
+    counter.textContent = `${completed} / ${checkboxes.length} 완료`;
+
+    if (shouldSave) {
+      try {
+        window.localStorage.setItem(TODO_STORAGE_KEY, JSON.stringify(state));
+      } catch (error) {
+        // 저장 공간을 사용할 수 없어도 체크리스트 자체는 계속 작동합니다.
+      }
+    }
+  };
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = Boolean(savedState[checkbox.dataset.todo]);
+    checkbox.addEventListener('change', () => update());
+  });
+
+  resetButton?.addEventListener('click', () => {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+    update();
+  });
+
+  update(false);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderDays();
   renderRuns();
   renderGuide();
+  setupTodoList();
 
   document.querySelectorAll('[data-day-filter]').forEach((button) => {
     button.addEventListener('click', () => {
