@@ -541,6 +541,17 @@ body.slow-site {
   font-size: 22px;
 }
 
+.hotel-card p.stay-cost-note {
+  min-height: 0;
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.7;
+}
+
 .luggage-plan {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(270px, 0.65fr);

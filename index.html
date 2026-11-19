@@ -12,14 +12,14 @@
   <meta property="og:image" content="images/nhatrang.jpg" />
   <link rel="icon" href="favicon.svg" />
   <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="slow.css" />
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="slow.css?v=20261119" />
+  <script src="app.js?v=20261119" defer></script>
 </head>
 <body class="slow-site">
   <main>
     <div class="version-bar no-print">
       <span class="version-tag">TRIP UPDATE</span>
-      <span><strong>항공 3편 확정 · 숙소 17박 확보 · To-do 18개</strong>인 수첩입니다.</span>
+      <span><strong>항공 3편 확정 · 숙소 22박 모두 예약 · To-do 16개</strong>인 수첩입니다.</span>
       <a href="#todo">할 일부터 보기 ↓</a>
     </div>
 
@@ -62,7 +62,8 @@
         </h1>
         <p class="hero-lead">
           나트랑에서는 친구 가족들과 먼저 웃고, 2월 4일 저녁부터는 아빠와 아들이
-          천천히 머뭅니다. 더운 오후에는 호텔과 카페에서 쉬며 작은 게임과 학습 AI도 만듭니다.
+          여행을 이어갑니다. 윈덤가든에서 하루 더 쉰 뒤 2월 5일 르모어로 옮기고,
+          더운 오후에는 호텔과 카페에서 작은 게임과 학습 AI도 만듭니다.
         </p>
         <div class="hero-actions no-print">
           <a href="#route" class="button button-dark">현재 여행 프레임 ↓</a>
@@ -100,10 +101,10 @@
             <h2>지금 남은 일부터<br />하나씩 체크</h2>
           </div>
           <div class="todo-intro">
-            <p>예약이 끝난 항공과 부자 숙소는 빼고, 아직 해야 할 일만 모았습니다. 체크한 내용은 이 브라우저에 자동 저장됩니다.</p>
+            <p>항공 3편과 숙소 22박은 모두 예약했습니다. 이제 이동과 출발 준비를 하나씩 마무리합니다. 체크한 내용은 이 브라우저에 자동 저장됩니다.</p>
             <div class="todo-progress" aria-live="polite">
               <span>진행 상황</span>
-              <strong data-todo-count>0 / 18 완료</strong>
+              <strong data-todo-count>0 / 16 완료</strong>
               <button type="button" class="no-print" data-todo-reset>체크 초기화</button>
             </div>
           </div>
@@ -111,11 +112,9 @@
 
         <div class="todo-groups">
           <article class="todo-group urgent">
-            <div class="todo-group-head"><span>01</span><div><small>BOOK FIRST</small><h3>숙소와 이동 예약</h3></div></div>
-            <label class="todo-item"><input type="checkbox" data-todo="group-city-hotel" /><span class="todo-check" aria-hidden="true"></span><div><strong>1/30—2/2 나트랑 시내호텔 예약</strong><small>객실 2개 · 커넥팅룸 우선, 불가하면 같은 층 옆방 · 심야 체크인 고지</small></div><em>최우선</em></label>
-            <label class="todo-item"><input type="checkbox" data-todo="wyndham-garden" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/2—2/4 윈덤가든 예약</strong><small>성인 3명·아이 4명 큰 객실 1개 · 침대 구성과 조식 포함 인원 확인</small></div><em>최우선</em></label>
-            <label class="todo-item"><input type="checkbox" data-todo="cxr-pickup" /><span class="todo-check" aria-hidden="true"></span><div><strong>1/30 깜라인공항 픽업 예약</strong><small>23:55 도착 · 7명과 캐리어가 모두 들어가는 차량 · 기사 미팅 위치 확인</small></div><em>예약</em></label>
-            <label class="todo-item"><input type="checkbox" data-todo="late-checkout" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/4 레이트 체크아웃 요청</strong><small>윈덤가든에 가능 시간과 추가요금 문의 · 불가하면 귀국 가족 짐 보관 요청</small></div><em>요청</em></label>
+            <div class="todo-group-head"><span>01</span><div><small>MOVE NEXT</small><h3>남은 이동 예약</h3></div></div>
+            <label class="todo-item"><input type="checkbox" data-todo="cxr-pickup" /><span class="todo-check" aria-hidden="true"></span><div><strong>1/30 깜라인공항→르모어 픽업</strong><small>23:55 도착 · 7명과 캐리어가 모두 들어가는 차량 · 기사 미팅 위치 확인</small></div><em>예약</em></label>
+            <label class="todo-item"><input type="checkbox" data-todo="group-return-airport" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/4 귀국 가족 공항 이동 확인</strong><small>두 가족 5명 · 21시 출국 예정 · 체크인 마감 기준으로 숙소 출발 시각 확인</small></div><em>확인</em></label>
             <label class="todo-item"><input type="checkbox" data-todo="nhatrang-dalat-car" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/13 나트랑→달랏 차량 예약</strong><small>시에스타 호텔→TTR Central Apart · 아빠와 아들, 캐리어 적재 가능 차량</small></div><em>예약</em></label>
             <label class="todo-item"><input type="checkbox" data-todo="dalat-airport" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/16 달랏호텔→DLI 공항 이동</strong><small>VN1383 11:35 출발 기준으로 호텔 픽업 시각과 차량 예약</small></div><em>추가</em></label>
             <label class="todo-item"><input type="checkbox" data-todo="saigon-airport" /><span class="todo-check" aria-hidden="true"></span><div><strong>2/21 호텔→SGN 공항 이동</strong><small>KE472 14:05 출발 · 교통 정체를 고려한 체크아웃과 출발 시각 확정</small></div><em>추가</em></label>
@@ -151,14 +150,15 @@
       </div>
       <div class="tet-copy">
         <p class="eyebrow">뗏 기간의 중심 원칙</p>
-        <h2>2월 4일 뒤에도 서두르지 않습니다.</h2>
+        <h2>리조트에서 하루 더, 시내에서는 느긋하게.</h2>
         <p>
-          모임 가족들이 돌아간 직후가 뗏 핵심 기간과 겹칩니다. 2월 4일부터 13일까지
+          두 가족은 2월 4일 저녁 귀국하고, 부자는 윈덤가든에서 한 밤 더 머뭅니다. 2월 5일부터 13일까지
           나트랑 시내의 르모어와 시에스타를 베이스로 두고, <strong>조식과 호텔 시설</strong>을
           생활의 안전망으로 둡니다. 달랏 이동은 연휴가 지난 2월 13일 낮 차량으로 준비합니다.
         </p>
         <div class="alert-pills">
-          <span>2/4 저녁 모임 종료</span>
+          <span>2/4 저녁 두 가족 귀국</span>
+          <span>2/5 르모어로 이동</span>
           <span>2/6 Tết 1일</span>
           <span>2/13 달랏 이동</span>
           <span>특별영업 최종 확인</span>
@@ -186,13 +186,13 @@
           </li>
           <li>
             <div class="route-number">02</div>
-            <div class="route-city"><span>1.30 — 2.04 · 계획</span><h3>아빠어디가 in 나트랑</h3><p>시내호텔 2실 3박 + 윈덤가든 큰 객실 1실 2박</p></div>
-            <strong class="status-planning">예약 전</strong><div class="route-dash" aria-hidden="true"></div>
+            <div class="route-city"><span>1.30 — 2.05 · 숙소 확정</span><h3>르모어에서 윈덤가든으로</h3><p>르모어 3실 3박 + 윈덤가든 3박 · 마지막 밤은 부자만</p></div>
+            <strong class="status-confirmed">6박 확보</strong><div class="route-dash" aria-hidden="true"></div>
           </li>
           <li>
             <div class="route-number">03</div>
-            <div class="route-city"><span>2.04 — 2.13 · 예약</span><h3>나트랑, 아빠와 아들</h3><p>르모어 5박 + 시에스타 4박</p></div>
-            <strong class="status-confirmed">9박 확보</strong><div class="route-dash" aria-hidden="true"></div>
+            <div class="route-city"><span>2.05 — 2.13 · 예약</span><h3>나트랑, 아빠와 아들</h3><p>르모어 4박 + 시에스타 4박</p></div>
+            <strong class="status-confirmed">8박 확보</strong><div class="route-dash" aria-hidden="true"></div>
           </li>
           <li>
             <div class="route-number">04</div>
@@ -209,23 +209,24 @@
         <aside class="route-note paper-card">
           <p class="eyebrow">1.30 — 2.04 · APPA EODIGA</p>
           <span class="anchor-badge">3 DADS · 4 KIDS</span>
-          <h3>처음 5일은 일곱 명이 함께</h3>
+          <h3>2월 4일 저녁까지 일곱 명이 함께</h3>
           <p>
             우리 부자와 다른 두 가족이 같은 비행기로 나트랑에 들어갑니다.
-            시내 3일과 리조트 2일을 함께 보낸 뒤, 2월 4일 저녁 두 가족은 귀국하고
-            아빠와 아들만 여행을 이어갑니다.
+            르모어에서 3박, 리조트에서 2박을 함께 보낸 뒤 2월 4일 저녁 두 가족은 귀국합니다.
+            리조트는 2월 5일까지 예약해 귀국일 낮에도 이용하고, 아빠와 아들은 한 밤 더 잔 뒤 시내로 옮깁니다.
           </p>
           <ul>
             <li>우리 집: 아빠 1 + 아들 1</li>
             <li>친구 가족: 아빠 1 + 아이 1</li>
             <li>친구 가족: 아빠 1 + 아이 2</li>
-            <li>1/30—2/2: 시내호텔 2실 · 커넥팅룸 우선</li>
-            <li>2/2—2/4: 윈덤가든 큰 객실 1실</li>
+            <li>1/30—2/2: 르모어 · 2인실 2개 + 3인실 1개</li>
+            <li>2/2—2/5: 윈덤가든 깜란 · 에어비앤비 예약</li>
+            <li>2/4 밤: 두 가족 귀국 · 부자만 리조트 1박 추가</li>
           </ul>
           <div class="alternate-route">
-            <small>지금 결정할 한 가지</small>
-            <strong>그룹 시내호텔 2실 찾기</strong>
-            <span>커넥팅룸을 우선 요청하고 불가능하면 같은 층의 나란한 객실로 예약합니다.</span>
+            <small>숙소는 모두 확정</small>
+            <strong>이제 픽업과 체크인 준비</strong>
+            <span>르모어에 자정 이후 도착과 가까운 객실 배정을 요청하고, 에어비앤비 호스트에게 입실 방법을 확인합니다.</span>
           </div>
         </aside>
       </div>
@@ -275,8 +276,8 @@
       <div class="section-shell">
         <div class="section-heading">
           <p class="eyebrow">Move strategy</p>
-          <h2>항공은 끝, 차량 두 개 남음</h2>
-          <p>남은 교통 예약은 1월 30일 깜라인공항 픽업과 2월 13일 나트랑→달랏 차량입니다.</p>
+          <h2>항공은 확정, 이제 차량 준비</h2>
+          <p>깜라인공항 픽업과 나트랑→달랏 차량을 예약하고, 귀국 가족의 공항 이동 및 호텔 간 이동도 확인합니다.</p>
         </div>
         <div class="flight-grid">
           <article class="flight-card confirmed-flight">
@@ -300,7 +301,7 @@
       <div class="section-heading">
         <p class="eyebrow">02 · Trip frame</p>
         <h2>확정된 것과 남은 결정</h2>
-        <p>도시별 이동일과 예약한 숙소를 시간순으로 보고, 아직 남은 그룹 숙소와 확정된 호치민 호텔을 한눈에 구분합니다.</p>
+        <p>22박의 숙소를 모두 예약했습니다. 2월 4일 두 가족의 귀국과 2월 5일 부자의 시내 복귀를 구분해 봅니다.</p>
       </div>
       <div class="filter-row no-print" role="group" aria-label="도시별 일정 필터">
         <button data-day-filter="전체" aria-pressed="true" class="active">전체</button>
@@ -316,20 +317,20 @@
         <div class="section-heading">
           <p class="eyebrow">03 · Stay</p>
           <h2>
-            <span class="section-title-line">17박은 확보,</span>
-            <span class="section-title-line">5박은 남음</span>
+            <span class="section-title-line">22박 모두,</span>
+            <span class="section-title-line">숙소 예약 완료</span>
           </h2>
-          <p>부자 둘의 나트랑 9박, 달랏 3박과 호치민 5박은 예약했습니다. 이제 일곱 명이 함께할 그룹 숙소 5박을 채웁니다.</p>
+          <p>나트랑·깜란 14박, 달랏 3박, 호치민 5박이 모두 확정됐습니다. 윈덤가든은 2월 5일까지, 두 번째 르모어는 2월 5일부터 9일까지입니다.</p>
         </div>
 
         <div class="stay-verdict">
           <div class="verdict-card recommended">
-            <span>1.30 — 2.04</span><h3>아빠어디가 7명</h3>
-            <ul><li>1/30—2/2 시내호텔 객실 2개</li><li>커넥팅룸 또는 같은 층 옆방</li><li>2/2—2/4 윈덤가든 큰 객실 1개</li></ul>
+            <span>1.30 — 2.05</span><h3>첫 6박 숙소 확정</h3>
+            <ul><li>르모어 3박 · 2인실 2개 + 3인실 1개</li><li>윈덤가든 깜란 3박 · 에어비앤비</li><li>두 가족은 2/4 귀국 · 마지막 밤은 부자만</li></ul>
           </div>
           <div class="verdict-card">
-            <span>2.04 — 2.16</span><h3>부자 숙소 3곳 확보</h3>
-            <ul><li>르모어 호텔 5박</li><li>시에스타 호텔 4박</li><li>TTR Central Apart 3박</li></ul>
+            <span>2.05 — 2.16</span><h3>부자 시내·고원 숙소</h3>
+            <ul><li>르모어 호텔 4박</li><li>시에스타 호텔 4박</li><li>TTR Central Apart 3박</li></ul>
           </div>
           <div class="verdict-card">
             <span>2.16 — 2.21</span><h3>호치민 5박 확보</h3>
@@ -339,33 +340,35 @@
 
         <div class="checked-note">
           <strong>현재 상태</strong>
-          <span>숙소 4건 예약 · 총 17박 확보</span>
+          <span>6개 숙박 구간 · 총 22박 예약 완료</span>
           <small>예약번호와 PIN은 노출하지 않고 결제 상태와 총액만 표시합니다.</small>
         </div>
 
         <div class="hotel-grid planning-grid">
           <article class="hotel-card">
-            <div class="hotel-card-top"><div><span>나트랑 · 그룹 시내</span><small>1.30 — 2.02 · 3박</small></div><strong>TBD</strong></div>
-            <h3>시내호텔 객실 2개</h3>
-            <p>아빠 3명과 아이 4명이 가까이 지낼 수 있도록 객실 배정을 먼저 확인합니다.</p>
-            <div class="hotel-amenities"><span>✓ 커넥팅룸 우선</span><span>✓ 같은 층 옆방 대안</span><span>✓ 24시 프런트</span></div>
-            <div class="hotel-price"><strong class="live-price">예약 전</strong><span>1/30 자정 무렵 체크인 고지</span></div>
+            <div class="hotel-card-top"><div><span>나트랑 · 그룹 시내</span><small>1.30 — 2.02 · 3박</small></div><strong>BOOKED</strong></div>
+            <h3>르모어 호텔 · 첫 숙소</h3>
+            <p>세 가족이 2인실 2개와 3인실 1개를 예약했습니다. 자정 이후 도착을 알리고 가까운 객실 배정을 요청합니다.</p>
+            <div class="hotel-amenities"><span>✓ 객실 3개 예약</span><span>✓ 성인 3명 + 아이 4명</span></div>
+            <div class="hotel-price"><strong class="live-price">우리 부자 185,082원</strong><span>2027.01.14 결제 예정 · 2인실 3박</span></div>
+            <p class="stay-cost-note">그룹 총액 633,126원<br />2인실 각 185,082원 × 2실 + 3인실 262,962원</p>
           </article>
 
           <article class="hotel-card">
-            <div class="hotel-card-top"><div><span>나트랑 · 그룹 리조트</span><small>2.02 — 2.04 · 2박</small></div><strong>PLAN</strong></div>
-            <h3>윈덤가든 큰 객실 1개</h3>
-            <p>세 가족 일곱 명이 한 공간에서 머물 수 있는 큰 객실 구성을 예약합니다.</p>
-            <div class="hotel-amenities"><span>✓ 7명 투숙 가능</span><span>✓ 조식 인원 확인</span><span>✓ 침대 구성 확인</span></div>
-            <div class="hotel-price"><strong class="live-price">예약 전</strong><span>객실 정원·아동 정책 확인</span></div>
+            <div class="hotel-card-top"><div><span>깜란 · 그룹 리조트 + 부자 1박</span><small>2.02 — 2.05 · 3박</small></div><strong>BOOKED</strong></div>
+            <h3>윈덤가든 깜란</h3>
+            <p>에어비앤비로 예약했습니다. 두 가족은 2/4 저녁 귀국하고, 아빠와 아들은 하루 더 쉰 뒤 2/5 르모어로 이동합니다.</p>
+            <div class="hotel-amenities"><span>✓ 에어비앤비 예약</span><span>✓ 3박</span><span>✓ 마지막 밤은 부자만</span></div>
+            <div class="hotel-price"><strong class="live-price">우리 집 분담 191,067원</strong><span>공동 숙소 총액 573,201원 · 3가족 분담</span></div>
+            <p class="stay-cost-note">공동 결제: 2026.11.18 114,641원 결제 완료<br />2027.01.24 458,560원 결제 예정</p>
           </article>
 
           <article class="hotel-card anchor-hotel">
-            <div class="hotel-card-top"><div><span>나트랑 · 아빠와 아들</span><small>2.04 — 2.09 · 5박</small></div><strong>BOOKED</strong></div>
+            <div class="hotel-card-top"><div><span>나트랑 · 아빠와 아들</span><small>2.05 — 2.09 · 4박</small></div><strong>BOOKED</strong></div>
             <h3>르모어 호텔</h3>
-            <p>그룹 여행이 끝난 뒤 시작하는 첫 번째 느린 시내 생활 베이스입니다.</p>
-            <div class="hotel-amenities"><span>✓ 예약 완료</span><span>✓ 아고다</span><span>✓ 5박</span></div>
-            <div class="hotel-price"><strong class="live-price">332,751원</strong><span>2027.01.19 결제 예정</span></div>
+            <p>윈덤가든에서 2월 5일 체크아웃한 뒤 돌아오는 시내 숙소입니다. 카페와 호텔에서 쉬며 부자만의 시간을 보냅니다.</p>
+            <div class="hotel-amenities"><span>✓ 예약 완료</span><span>✓ 아고다</span><span>✓ 4박</span></div>
+            <div class="hotel-price"><strong class="live-price">264,367원</strong><span>2027.01.20 결제 예정</span></div>
           </article>
 
           <article class="hotel-card">
@@ -412,9 +415,9 @@
         </div>
 
         <div class="stay-totals">
-          <div><span>예약 확보</span><strong>4곳 · 17박</strong><small>나트랑 9박 + 달랏 3박 + 호치민 5박</small></div>
-          <div class="featured"><span>숙소 예약액</span><strong>1,224,944원</strong><small>결제 완료·예정 합계</small></div>
-          <div><span>남은 숙박</span><strong>5박</strong><small>아빠어디가 그룹 숙소</small></div>
+          <div><span>예약 확보</span><strong>6구간 · 22박</strong><small>나트랑·깜란 14박 + 달랏 3박 + 호치민 5박</small></div>
+          <div class="featured"><span>우리 부자 숙박비</span><strong>1,532,709원</strong><small>첫 르모어 2인실 + 윈덤가든 분담액 포함</small></div>
+          <div><span>미예약 숙박</span><strong>0박</strong><small>전체 일정 숙소 확정</small></div>
         </div>
       </div>
     </section>
@@ -423,7 +426,7 @@
       <div class="section-heading">
         <p class="eyebrow">04 · Morning Run</p>
         <h2>러닝은 호텔에서, 될 때만</h2>
-        <p>아빠어디가 일곱 명이 함께하는 1월 30일부터 2월 4일까지는 운동 일정을 잡지 않습니다. 이후에도 러닝머신 30—40분이면 충분합니다.</p>
+        <p>아빠어디가 일곱 명이 함께하는 1월 30일부터 2월 4일까지는 운동 일정을 잡지 않습니다. 2월 5일 시내 복귀 뒤에도 러닝머신 30—40분이면 충분합니다.</p>
       </div>
       <div class="run-summary">
         <div><span>그룹 기간</span><strong>OFF</strong><small>1.30—2.04 운동 없음</small></div>
@@ -433,7 +436,7 @@
       </div>
       <div id="run-grid" class="run-grid"></div>
       <div class="run-safety">
-        <div><span>GROUP</span><strong>함께 있을 때는 운동 쉬기</strong><p>친구 가족들과 보내는 시간에 집중하고 러닝은 2월 4일 이후로 미룹니다.</p></div>
+        <div><span>GROUP</span><strong>함께 있을 때는 운동 쉬기</strong><p>친구 가족들과 보내는 시간에 집중하고 러닝은 2월 5일 시내 복귀 뒤로 미룹니다.</p></div>
         <div><span>PACE</span><strong>대화 가능한 속도</strong><p>여행 중에는 거리나 기록보다 가볍게 땀을 내는 것이 목표입니다.</p></div>
         <div><span>BODY</span><strong>피곤하면 바로 휴식</strong><p>수면이 부족하거나 많이 걸은 날에는 운동을 일정에서 지웁니다.</p></div>
         <div><span>AFTER</span><strong>물과 호텔 조식</strong><p>운동 뒤 수분과 아침 식사를 챙기고 관광은 천천히 시작합니다.</p></div>
@@ -495,24 +498,27 @@
         <div>
           <div class="section-heading">
             <p class="eyebrow">07 · Budget</p>
-            <h2>결제와 결제예정을 나눠 보기</h2>
-            <p>항공 3편은 결제 완료, 숙소 4곳은 결제 완료 1건과 결제 예정 3건입니다. 예약번호와 회원번호는 표시하지 않습니다.</p>
+            <h2>우리 부자 비용으로 모아 보기</h2>
+            <p>항공 3편과 시에스타는 결제 완료, 나머지 호텔은 결제 예정입니다. 윈덤가든은 공동 총액의 일부를 결제했고, 아래 합계에는 우리 집 분담액만 넣었습니다.</p>
           </div>
           <div class="money-tip"><span>예산 원칙</span><strong>500만원은 기준선</strong><small>조금 넘더라도 무리한 지출만 피하고, 긴 체류의 편안함은 지킵니다.</small></div>
-          <div class="budget-note"><strong>남은 큰 변수는 그룹 숙소 5박</strong><span>아빠어디가 숙소와 공항 픽업·나트랑→달랏 차량 비용을 더해야 합니다.</span></div>
+          <div class="budget-note"><strong>숙소 확정, 이제 현지 경비</strong><span>공항·호텔 간 이동, 나트랑→달랏 차량, 식비·관광비·통신·보험 등을 추가하면 전체 여행비가 됩니다.</span></div>
         </div>
         <div class="budget-card">
-          <div class="budget-total"><div><span>확정·예약 금액</span><strong>2,720,544<small>원</small></strong></div><p>결제 완료 1,818,163원<br />결제 예정 902,381원</p></div>
+          <div class="budget-total"><div><span>우리 부자 항공·숙소 예약액</span><strong>3,028,309<small>원</small></strong></div><p>항공 1,495,600원<br />숙소 1,532,709원</p></div>
           <div class="budget-bars status-ledger">
             <div><div><span>ICN→CXR · TW033</span><strong>546,000원 · 결제</strong></div><div class="bar-track"><span style="width:100%"></span></div></div>
             <div><div><span>SGN→ICN · KE472</span><strong>761,600원 · 결제</strong></div><div class="bar-track"><span style="width:100%"></span></div></div>
             <div><div><span>DLI→SGN · VN1383</span><strong>188,000원 · 결제</strong></div><div class="bar-track"><span style="width:100%"></span></div></div>
             <div><div><span>시에스타 4박</span><strong>322,563원 · 결제</strong></div><div class="bar-track"><span style="width:100%"></span></div></div>
-            <div><div><span>르모어 5박</span><strong>332,751원 · 1/19 예정</strong></div><div class="bar-track"><span style="width:80%"></span></div></div>
+            <div><div><span>르모어 1/30—2/2 · 우리 부자 3박</span><strong>185,082원 · 1/14 예정</strong></div><div class="bar-track"><span style="width:80%"></span></div></div>
+            <div><div><span>윈덤가든 3박 · 우리 집 분담</span><strong>191,067원 · 공동 분할결제</strong></div><div class="bar-track"><span style="width:20%"></span></div></div>
+            <div><div><span>르모어 2/5—2/9 · 부자 4박</span><strong>264,367원 · 1/20 예정</strong></div><div class="bar-track"><span style="width:80%"></span></div></div>
             <div><div><span>TTR Central Apart 3박</span><strong>162,360원 · 2/4 예정</strong></div><div class="bar-track"><span style="width:80%"></span></div></div>
             <div><div><span>센트럴 팰리스 5박</span><strong>407,270원 · 2/9 예정</strong></div><div class="bar-track"><span style="width:80%"></span></div></div>
           </div>
-          <p class="fineprint">남은 금액: 그룹 숙소 5박, 공항 픽업, 나트랑→달랏 차량, 식비·관광비. 예약번호·PIN·회원번호는 표시하지 않습니다.</p>
+          <p class="fineprint">계산 기준: 첫 르모어는 우리 부자 2인실 185,082원, 윈덤가든은 573,201원 ÷ 3가족 = 191,067원. 다른 두 가족의 르모어 객실 비용은 이 합계에 포함하지 않습니다.</p>
+          <p class="fineprint">윈덤가든 공동 결제 일정: 2026.11.18 114,641원 결제 완료 + 2027.01.24 458,560원 결제 예정. 이 금액은 세 가족 총액이며 개인별 송금·정산 완료 여부와는 별도입니다.</p>
         </div>
       </div>
     </section>
@@ -520,15 +526,15 @@
     <section id="ready" class="section-shell ready-section">
       <div class="section-heading">
         <p class="eyebrow">08 · Before you go</p>
-        <h2>이제 남은 예약만 단순하게</h2>
-        <p>항공과 부자 여행 숙소는 확보했습니다. 이제 그룹 숙소와 차량, 호치민 관광·휴양 세부 일정을 차례대로 마무리합니다.</p>
+        <h2>숙소 예약 끝, 이제 출발 준비</h2>
+        <p>항공과 모든 숙소가 확정됐습니다. 예정 결제, 체크인 방법과 차량 이동을 마무리하면 됩니다.</p>
       </div>
       <ol class="booking-order">
-        <li><span>01</span><div><strong>그룹 시내호텔 2실</strong><p>1/30—2/2, 커넥팅룸 우선 · 불가하면 같은 층 옆방 요청</p></div></li>
-        <li><span>02</span><div><strong>윈덤가든 큰 객실</strong><p>2/2—2/4, 성인 3명·아이 4명 정원과 조식 인원 확인</p></div></li>
+        <li><span>01</span><div><strong>르모어 도착·객실 배정 요청</strong><p>2인실 2개 + 3인실 1개 · 자정 이후 체크인과 가까운 객실 배정을 요청</p></div></li>
+        <li><span>02</span><div><strong>에어비앤비 입실·이동 확인</strong><p>호스트에게 입실 방법·조식 조건 확인 · 2/2 리조트행과 2/5 르모어행 차량 준비</p></div></li>
         <li><span>03</span><div><strong>CXR 공항 픽업</strong><p>1/30 23:55 도착 · 7명과 짐이 탈 수 있는 차량 예약</p></div></li>
         <li><span>04</span><div><strong>나트랑→달랏 차량</strong><p>2/13 시에스타에서 TTR Central Apart까지 캐리어 포함 예약</p></div></li>
-        <li><span>05</span><div><strong>호치민 세부 일정</strong><p>2/16—2/21 센트럴 팰리스 호텔을 베이스로 오전 관광과 오후 휴양을 배치</p></div></li>
+        <li><span>05</span><div><strong>숙소 예정 결제 챙기기</strong><p>1/14 첫 르모어 · 1/20 두 번째 르모어 · 1/24 윈덤가든 잔금 · 2/4 달랏 · 2/9 호치민</p></div></li>
         <li><span>06</span><div><strong>출발 전 항공 확인</strong><p>터미널·수하물·운항 알림과 대한항공 온라인 체크인 확인</p></div></li>
       </ol>
 
@@ -544,7 +550,7 @@
       <details>
         <summary>자료 기준과 주요 출처 보기</summary>
         <div>
-          <p>항공편, 동행 구성과 숙소 예약 상태는 2026년 10월 20일 기준 여행자의 예약·계획을 반영했습니다. 그룹 숙소·차량·세부 관광 일정·특별영업은 아직 바뀔 수 있습니다.</p>
+          <p>숙소·결제 상태와 동행 일정은 2026년 11월 19일 여행자가 제공한 예약 내역과 설명을 반영했습니다. 항공편은 기존 예약 정보 기준이며, 차량·세부 관광 일정·특별영업은 추가 확인합니다.</p>
           <ul>
             <li><a href="https://www.vietnam.travel/things-to-do/tet-vietnam-lunar-new-year" target="_blank" rel="noopener noreferrer">베트남 관광청 Tết 안내 ↗</a></li>
             <li><a href="https://www.mofa.go.kr/vn-ko/brd/m_2203/view.do?seq=1345931" target="_blank" rel="noopener noreferrer">주베트남 대한민국 대사관 무사증 안내 ↗</a></li>
